@@ -79,6 +79,14 @@ public class ParallelGateWayTest {
         }
     }
 
-
+    /**完成我的任务*/
+    @Test
+    public void completeMyPersonalTask(){
+        //任务ID
+        String taskId = "92502";
+        processEngine.getTaskService()//与正在执行的任务管理相关的Service
+                .complete(taskId);
+        System.out.println("完成任务：任务ID："+taskId);
+    }
 
 }
