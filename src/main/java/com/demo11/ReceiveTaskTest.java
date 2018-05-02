@@ -17,6 +17,7 @@ public class ReceiveTaskTest {
     /**部署流程定义（从inputStream）*/
     @Test
     public void deploymentProcessDefinition_inputStream(){
+
         InputStream inputStreamBpmn = this.getClass().getResourceAsStream("/receiveTask/receiveTask.bpmn");
         InputStream inputStreamPng = this.getClass().getResourceAsStream("/receiveTask/receiveTask.png");
         Deployment deployment = processEngine.getRepositoryService()//与流程定义和部署对象相关的Service
